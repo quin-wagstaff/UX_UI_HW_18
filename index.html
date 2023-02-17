@@ -6,80 +6,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/30902709ce.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <header class="navigation">
-        <div class="inline-block logo">
-            <p>QW</p>
-        </div>
-        <nav class="inline-block">
-            <ul>
-                <li class="inline-block">work</li>
-                <li class="inline-block">about</li>
-                <li class="inline-block">contact</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="heroImg">
-        <div class="content">
-            <h1>Hi, I'm Quin Wagstaff</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="logo">QW</h1>
+                <ul class="sideMenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <img src="images/grey_square.png" class="headShot">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Quin Wagstaff</span></h1>
             <h2>I research, I design, I code.</h2>
             <p>I’m a UX/UI designer based in Salt Lake City, Utah with experience in delivering end-to-end UX/UI design for websites and apps. I’m passionate about people and the way their mind works, as well as designing through a very iterative process. </p>
-            <button>Resume</button>
-        </div>
-    </section>
-    
-    <section class="mySkills">
-        <h1>My UX Skills</h1>
-        <div class="flexContainer">
-            <div>
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
             </div>
         </div>
-    </section>
-    <section class="myWork">
-        <h1>My Work</h1>
-        <div class="workGrid">
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h4></h4>
-                <p></p>
-                <button></button>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h4></h4>
-                <p></p>
-                <button></button>
+    </div>
+    <!-----about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/grey_square.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam laudantium quam? Soluta repellat exercitationem ducimus! Voluptates id dolor obcaecati, repellendus rem a praesentium, tempora dolore accusamus atque laboriosam eligendi.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experinece">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <h3>View all projects</h3>
-    </section>
-    <footer>
-        <ul>
-            <li class="inline-block">work</li>
-            <li class="inline-block">about</li>
-            <li class="inline-block">contact</li>
-        </ul>
-    </footer>
+    </div>
+    <!------services-------->
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sed iure illum possimus vitae ex est? Non possimus numquam exercitationem ratione ipsam quo repellat neque quis! Quae reprehenderit facere mollitia!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sed iure illum possimus vitae ex est? Non possimus numquam exercitationem ratione ipsam quo repellat neque quis! Quae reprehenderit facere mollitia!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sed iure illum possimus vitae ex est? Non possimus numquam exercitationem ratione ipsam quo repellat neque quis! Quae reprehenderit facere mollitia!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-----portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/grey_square.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci possimus facere fuga error iure minus tempore illo dolorum aspernatur culpa hic ullam aperiam soluta voluptate cumque, debitis vel magnam enim.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/grey_square.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci possimus facere fuga error iure minus tempore illo dolorum aspernatur culpa hic ullam aperiam soluta voluptate cumque, debitis vel magnam enim.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/grey_square.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci possimus facere fuga error iure minus tempore illo dolorum aspernatur culpa hic ullam aperiam soluta voluptate cumque, debitis vel magnam enim.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!------contact------->
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>quinwagstaff3@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-behance"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Quin Wagstaff_Resume_2022.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElmentsByClassName("tab-links");
+        var tabcontents = document.getElmentsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+
+    </script>
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+        function openmenu(){
+            sideMenu.syle.right = "0";
+        }
+        function closemenu(){
+            sideMenu.syle.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
